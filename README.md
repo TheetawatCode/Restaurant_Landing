@@ -1,7 +1,7 @@
 # Luna Trattoria — Restaurant Landing (Next.js + TS + Tailwind)
 
 Modern, business-class landing page for an Italian restaurant.  
-Built with scalable structure and reusable sections/components (HR-friendly).
+Built with scalable structure and reusable sections/components.
 
 ---
 
