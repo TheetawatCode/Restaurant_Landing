@@ -23,9 +23,9 @@ pnpm install
 pnpm dev 
 
 📁 Project Structure
-	•	src/app — routes, layout, sitemap
-	•	src/components/layout — header/footer
-	•	src/components/sections — landing sections
-	•	src/components/ui — reusable UI building blocks
-	•	src/data — mock data (menu/testimonials/gallery)
-	•	src/lib — utilities
+•	src/app — routes, layout, sitemap
+•	src/components/layout — header/footer
+•	src/components/sections — landing sections
+•	src/components/ui — reusable UI building blocks
+•	src/data — mock data (menu/testimonials/gallery)
+•	src/lib — utilities
