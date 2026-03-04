@@ -20,11 +20,12 @@ export function Gallery() {
               key={g.src}
               className="relative overflow-hidden rounded-3xl border border-zinc-200 bg-white shadow-sm"
             >
-              <div className="aspect-4/3 w-full">
+              <div className="aspect-[4/3] w-full">
                 <Image
                   src={g.src}
                   alt={g.alt}
                   fill
+                  sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                   className="object-cover transition-transform duration-500 hover:scale-[1.03]"
                 />
               </div>

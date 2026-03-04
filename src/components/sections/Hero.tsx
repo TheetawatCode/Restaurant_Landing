@@ -5,18 +5,23 @@ import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { MapPin, Sparkles } from "lucide-react";
 
+const HERO_IMG =
+  "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=2400&q=80";
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden bg-cream">
       <div className="absolute inset-0">
         <Image
-          src="/images/hero.jpg"
-          alt="Italian restaurant hero"
+          src={HERO_IMG}
+          alt="Modern Italian restaurant ambiance"
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/40 to-black/70" />
+        {/* overlay */}
+        <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/50 to-black/80" />
       </div>
 
       <Container className="relative py-20 sm:py-24 lg:py-28">
@@ -38,9 +43,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 text-base leading-relaxed text-white/85 sm:text-lg">
-            Fresh ingredients, handmade pasta, and a curated wine list. A
-            refined atmosphere for business dinners, celebrations, and date
-            nights.
+            Fresh ingredients, handmade pasta, and a curated wine list. A refined
+            atmosphere for business dinners, celebrations, and date nights.
           </p>
 
           <div id="reserve" className="mt-8 flex flex-col gap-3 sm:flex-row">
